@@ -483,7 +483,7 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     date: Schema.Attribute.DateTime;
     description: Schema.Attribute.Text &
       Schema.Attribute.SetMinMaxLength<{
-        maxLength: 80;
+        maxLength: 240;
       }>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
